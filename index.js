@@ -61,7 +61,7 @@ var initCoveragePlugin = function(config, logger, helper) {
     fs.writeFileSync(dest, initJs.data);
 };
 
-initCoveragePlugin.$inject = ['config.coffeeCoverage', 'logger', 'helper'];
+initCoveragePlugin.$inject = ['config.icedCoffeeCoverage', 'logger', 'helper'];
 
 /**
  * Transform a coffee file into js source that is instrumented with iced-coffee-coverage
@@ -92,7 +92,7 @@ var createPreprocessor = function(args, config, logger, helper) {
     }
 };
 
-createPreprocessor.$inject = ['args', 'config.coffeeCoverage', 'logger', 'helper'];
+createPreprocessor.$inject = ['args', 'config.icedCoffeeCoverage', 'logger', 'helper'];
 
 // PUBLISH DI MODULE
 module.exports = {
