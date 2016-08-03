@@ -15,13 +15,13 @@ _$jscoverage["index.coffee"].source = ["foo = (args...) ->", "    console.log ar
 
 (function() {
   var foo,
-    slice = [].slice;
+    __slice = [].slice;
 
   _$jscoverage["index.coffee"][1]++;
 
   foo = function() {
     var args;
-    args = 1 <= arguments.length ? slice.call(arguments, 0) : [];
+    args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
     _$jscoverage["index.coffee"][2]++;
     return console.log.apply(console, args);
   };
