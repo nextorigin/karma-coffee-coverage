@@ -1,9 +1,10 @@
 {
-  "name": "karma-coffee-coverage",
+  "name": "karma-iced-coffee-coverage",
   "version": "1.1.2",
-  "description": "Plugins for Karma to use the coffee-coverage tool",
+  "description": "Plugins for Karma to use the iced-coffee-coverage tool",
   "keywords": [
     "istanbul",
+    "iced",
     "coffee",
     "coverage",
     "karma",
@@ -12,11 +13,12 @@
   "author": "Benbria (http://www.benbria.com/)",
   "license": "MIT",
   "contributors": [
-    "Calvin Wiebe (https://github.com/calvinwiebe)"
+    "Calvin Wiebe (https://github.com/calvinwiebe)",
+    "Charles Phillips (https://github.com/doublerebel)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/benbria/karma-coffee-coverage.git"
+    "url": "https://github.com/nextorigin/karma-iced-coffee-coverage.git"
   },
   "dependencies": {
     "iced-coffee-coverage": "^1.0.2"
