@@ -26,6 +26,7 @@
   "devDependencies": {
     "chai": "^2.3.0",
     "coveralls": "^2.11.12",
+    "iced-runtime": "^1.0.3",
     "istanbul": "^0.4.4",
     "lodash.assign": "^3.1.0",
     "mocha": "^2.2.4",
