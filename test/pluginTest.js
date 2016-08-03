@@ -167,6 +167,10 @@ describe('Karma Coffee Coverage', function() {
                     js = jsOrErr;
                 }
                 try {
+                    path = js.match(/\"path\":\"([a-zA-Z0-9-._/\s]+)\"/);
+                    expect(path[1]).to.eq(coffeeFilePath);
+                    js = js.replace(/\"path\":\"([a-zA-Z0-9-._/\s]+)\"/, '"path":"index.coffee"');
+                    js = js.replace(/__coverage__\[\"[a-zA-Z0-9-._/\s]+\"\]/g, '__coverage__["index.coffee"]');
                     expect(js).to.eq(istanbulSrc);
                 } catch (err) {
                     error = err;
