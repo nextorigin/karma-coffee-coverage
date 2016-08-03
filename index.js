@@ -1,7 +1,7 @@
 "use strict";
 var fs = require('fs');
 var path = require('path');
-var coffeeCoverage = require('coffee-coverage');
+var coffeeCoverage = require('iced-coffee-coverage');
 var CoverageInstrumentor = coffeeCoverage.CoverageInstrumentor;
 var ISTANBUL_COVERAGE_VAR = '__coverage__';
 
@@ -29,7 +29,7 @@ var StringStream = (function() {
  * files you wish to know about.
  */
 var initCoveragePlugin = function(config, logger, helper) {
-    var log = logger.create('framework.coffee-coverage');
+    var log = logger.create('framework.iced-coffee-coverage');
     var basePath, dest, defaultOptions, instrumentor, initJs, options, singleOptions;
     config = config || {};
     config.framwork = config.framwork || {};
@@ -64,10 +64,10 @@ var initCoveragePlugin = function(config, logger, helper) {
 initCoveragePlugin.$inject = ['config.coffeeCoverage', 'logger', 'helper'];
 
 /**
- * Transform a coffee file into js source that is instrumented with coffee-coverage
+ * Transform a coffee file into js source that is instrumented with iced-coffee-coverage
  */
 var createPreprocessor = function(args, config, logger, helper) {
-    var log = logger.create('preprocessor.coffee-coverage');
+    var log = logger.create('preprocessor.iced-coffee-coverage');
     var options = {};
     config = config || {};
     config.preprocessor = config.preprocessor || {};
@@ -96,6 +96,6 @@ createPreprocessor.$inject = ['args', 'config.coffeeCoverage', 'logger', 'helper
 
 // PUBLISH DI MODULE
 module.exports = {
-  'framework:coffee-coverage'   : ['factory', initCoveragePlugin],
-  'preprocessor:coffee-coverage': ['factory', createPreprocessor]
+  'framework:iced-coffee-coverage'   : ['factory', initCoveragePlugin],
+  'preprocessor:iced-coffee-coverage': ['factory', createPreprocessor]
 };
