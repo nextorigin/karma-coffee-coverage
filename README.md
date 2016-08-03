@@ -1,6 +1,14 @@
 # karma-iced-coffee-coverage
 
+[![Build Status][ci-master]][travis-ci]
+[![Coverage Status][coverage-master]][coveralls]
+[![Dependency Status][dependency]][david]
+[![devDependency Status][dev-dependency]][david]
+[![Downloads][downloads]][npm]
+
 A set of plugins for the Karma Test Runner to support [iced-coffee-coverage](https://github.com/benbria/iced-coffee-coverage)
+
+[![NPM][npm-stats]][npm]
 
 # Preprocessor
 
@@ -86,3 +94,16 @@ Should be used in conjunction with a coverage reporter that supports `istanbul` 
 `karma-coverage`.
 
 Can use both `framework` and `preprocessor` plugins together.
+
+
+  [ci-master]: https://img.shields.io/travis/nextorigin/karma-iced-coffee-coverage/master.svg?style=flat-square
+  [travis-ci]: https://travis-ci.org/nextorigin/karma-iced-coffee-coverage
+  [coverage-master]: https://img.shields.io/coveralls/nextorigin/karma-iced-coffee-coverage/master.svg?style=flat-square
+  [coveralls]: https://coveralls.io/r/nextorigin/karma-iced-coffee-coverage
+  [dependency]: https://img.shields.io/david/nextorigin/karma-iced-coffee-coverage.svg?style=flat-square
+  [david]: https://david-dm.org/nextorigin/karma-iced-coffee-coverage
+  [dev-dependency]: https://img.shields.io/david/dev/nextorigin/karma-iced-coffee-coverage.svg?style=flat-square
+  [david-dev]: https://david-dm.org/nextorigin/karma-iced-coffee-coverage#info=devDependencies
+  [downloads]: https://img.shields.io/npm/dm/karma-iced-coffee-coverage.svg?style=flat-square
+  [npm]: https://www.npmjs.org/package/karma-iced-coffee-coverage
+  [npm-stats]: https://nodei.co/npm/karma-iced-coffee-coverage.png?downloads=true&downloadRank=true&stars=true
