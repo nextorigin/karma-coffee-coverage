@@ -1,15 +1,15 @@
 "use strict";
 var expect = require('chai').expect;
-var initCoveragePlugin = require('../')['framework:coffee-coverage'][1];
-var createPreprocessor = require('../')['preprocessor:coffee-coverage'][1];
+var initCoveragePlugin = require('../')['framework:iced-coffee-coverage'][1];
+var createPreprocessor = require('../')['preprocessor:iced-coffee-coverage'][1];
 var sinon = require('sinon');
-var coffeeCoverage = require('coffee-coverage');
+var coffeeCoverage = require('iced-coffee-coverage');
 var merge = require('lodash.assign');
 var fs = require('fs');
 var path = require('path');
 var instrumentors = {
-    istanbul: require('coffee-coverage/lib/instrumentors/istanbul'),
-    jsCoverage: require('coffee-coverage/lib/instrumentors/JSCoverage')
+    istanbul: require('iced-coffee-coverage/lib/instrumentors/Istanbul'),
+    jsCoverage: require('iced-coffee-coverage/lib/instrumentors/JSCoverage')
 }
 
 /**
