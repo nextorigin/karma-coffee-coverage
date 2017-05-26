@@ -24,7 +24,7 @@
     "iced-coffee-coverage": "^1.0.3"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.0.0",
     "coveralls": "^2.11.12",
     "iced-runtime": "^1.0.3",
     "istanbul": "^0.4.4",
